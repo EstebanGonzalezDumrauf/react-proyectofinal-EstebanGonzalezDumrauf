@@ -1,13 +1,26 @@
-body {
+@charset "UTF-8";
+/*PALETA DE COLORES DE SITE*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&family=Quicksand:wght@300;400&display=swap");
+* {
+  /*MODO CELULAR!!!!!!!!!*/
+  /*MODO CELULAR!!!!!!!!!*/
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: small;
+  font-weight: bold;
 }
+
+body {
+  font-family: Manrope;
+}
+
+nav-link {
+  font-family: Quicksand;
+  font-size:large;
+}
+
