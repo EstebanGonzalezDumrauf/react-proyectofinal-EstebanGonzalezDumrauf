@@ -7,11 +7,11 @@ import Carrousel from "./Carrousel"
 const Header = () => {
     return (
         <div className="container-fluid">
-            <div className="row bg-light">
-                <div className="col-md-6 mt-2">
+            <div className="row bg-light align-self-center">
+                <div className="col-md-6 ">
                     <a href=""><img src={Shining} alt={"ShiningLife"} width={32}/></a>
                 </div>
-                <div className="col-md-6 mt-2 text-end">
+                <div className="col-md-6 text-end">
                 <a href="" className="text-dark text-decoration-none">Quienes Somos</a> | <a href="" className="text-dark text-decoration-none">Ayuda</a>
                 </div>
             </div>
@@ -30,7 +30,7 @@ const Header = () => {
                     </a>
                     <a id="user" className="btn btn-ligth" width="20" height="20"></a>
                     <div id="divLogin">
-                        <a href="#" id="login" className="btn btn-ligth" width="20" height="20">Login</a>
+                        <a href="#" id="login" className="btn btn-ligth fs-6" width="20" height="20">Login</a>
                     </div>
                 </div>
             </div>     

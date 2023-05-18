@@ -8,7 +8,7 @@ import Logo from "./images/pie/logotipo.jpg"
 const Footer = () => {
     return (
         <div className="container-fluid">
-            <div className="row text-center mt-2">
+            <div className="row text-center my-1">
                 <div>
                     <img src={Pie} alt="Banner Caracteristicas de Productos de Natura" width="75%" />
                 </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                     © 2023, Shining Life. Todos los derechos reservados
                 </div>
 
-                <div className="col-lg-3 col-md-4 col-sm-12 text-end lign-items-center align-self-center">
+                <div className="col-lg-3 col-md-4 col-sm-12 text-end align-items-center align-self-center">
                     <div>
                         <a href="https://www.instagram.com/liliana_naturabahia"><img src={Insta} alt="Logo de Instagram"
                             width="50" height="50" /></a>
