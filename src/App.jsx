@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-      <ItemListContainer greeting= {"Proximamente Productos!!"}/>
+      {/* <ItemListContainer greeting= {"Proximamente Productos!!"}/> */}
       <ItemCount inicial={1} stock={10} agregar={(cantidad) => console.log('Cantidad Agregada', cantidad)} />
       <Footer />
     </div>
