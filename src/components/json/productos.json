@@ -1,55 +1,43 @@
+[
     {
         "id":"AB-5001",
-        "descripcion": "Labial Matte Instranferible",
-        "precio": 3338,
-        "img": "./img/productos/belleza/bell3.jpeg"
+        "descripcion":"Repuesto Shampoo Hidratación Reparadora",
+        "precio":978,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwca05c8a4/NATARG-51874_1.jpg"
     },
 
     {
-        "id": "AC-5005",
-        "descripcion": "Iluminador Dúo Super Brillo",
-        "precio": 2645,
-        "img": "./img/productos/belleza/bell1.jpeg"
+        "id":"AC-5005",
+        "descripcion":"Repuesto hidratante corporal maracuyá",
+        "precio":3150,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw9b8f5797/NATARG-73179_1.jpg"
     },
 
     {
-        "id": "DB-7110",
-        "descripcion": "Hidratante de Manos 75g",
-        "precio": 1120,
-        "img": "./img/productos/cuidados/cui1.jpeg"
+        "id":"DB-7110",
+        "descripcion":"Repuesto Shampoo Liso y Suelto",
+        "precio":1150,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw6791eef8/NATARG-48100_1.jpg"
     }, 
 
     {
-        "id": "CT-2350",
-        "descripcion": "Body Splash Cereza",
-        "precio": 3513,
-        "img": "./img/productos/perfumeria/perf5.jpeg"
+        "id":"CT-2350",
+        "descripcion":"Pulpa Hidratante para Manos Ekos Castaña",
+        "precio":2195,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw11c3c069/1200x1200/70983_2.jpg"
     },
 
     {
-        "id": "AT-6450",
-        "descripcion": "Jabones TODO DIA",
-        "precio": 1700,
-        "img": "./img/productos/cuidados/cui4.jpeg"
+        "id":"AT-6450",
+        "descripcion":"Repuesto Frescor Ishpink",
+        "precio":5996,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw4285b431/1200x1200/118999_1.jpg"
     },
 
     {
-        "id": "CC-1002",
-        "descripcion": "Exilir Essencial",
-        "precio": 12000,
-        "img": "./img/productos/perfumeria/perf2.jpeg"
-    },
-
-    {
-        "id": "DD-6110",
-        "descripcion": "Kaiak Aventura",
-        "precio": 6584,
-        "img": "./img/productos/perfumeria/perf10.jpeg"
-    }, 
-
-    {
-        "id": "HT-2210",
-        "descripcion": "Kit Completo",
-        "precio": 6600,
-        "img": "./img/productos/cuidados/cui7.jpeg"
+        "id":"CC-1002",
+        "descripcion":"Rubor Intense Me Coral",
+        "precio":5180,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw378d4ddb/1200x1200/92595_1.jpg"
     }
+]

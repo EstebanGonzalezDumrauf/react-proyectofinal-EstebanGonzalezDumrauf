@@ -19,9 +19,9 @@ const ItemCount = ({ stock, inicial, onAdd }) => {
     return (
         <div className="Botones">
         <div className="btn-group" role="group" aria-label="Basic mixed styles example">
-            <button type="button" class="btn btn-danger mx-3" onClick={decrementar}>-</button>
+            <button type="button" className="btn btn-danger mx-3" onClick={decrementar}>-</button>
             <p className="h4 text-center pt-2">{cantidad}</p> 
-            <button type="button" class="btn btn-success mx-3" onClick={incrementar}>+</button>
+            <button type="button" className="btn btn-success mx-3" onClick={incrementar}>+</button>
         </div>
         <div>
             <button className="btn btn-dark my-2" onClick={() => onAdd(cantidad)} disabled={!stock}>

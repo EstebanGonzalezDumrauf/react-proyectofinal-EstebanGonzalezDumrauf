@@ -21,7 +21,7 @@ const Navbar = () => {
                                 <a className="nav-link mx-2 fs-5 fw-bold" aria-current="page" href="index.html">Productos</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mx-2 fs-5 fw-bold" href="index.html" tabindex="-1" aria-disabled="true">Mi
+                                <a className="nav-link mx-2 fs-5 fw-bold" href="index.html" tabIndex="-1" aria-disabled="true">Mi
                                     Carrito</a>
                                     {/* carrito.html */}
                             </li>
