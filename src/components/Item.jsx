@@ -8,6 +8,7 @@ const Item = ({ item }) => {
                         <p className="card-text text-center">{item.descripcion}</p>
                     </div>
                     <h2 className="text-center">$ {item.precio}</h2>
+                    <button type="button" class="btn btn-outline-danger">Ver detalle</button>
                 </div>
             </div>
         </>

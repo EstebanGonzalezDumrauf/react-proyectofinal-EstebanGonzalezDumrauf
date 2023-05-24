@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const promesa = new Promise((resolve) => {
             setTimeout(() => {
-                let producto = productos.find(item => item.id === "AT-6450")
+                let producto = productos.find(item => item.id === "AC-5005")
                 resolve(producto);
             }, 2000);
         });

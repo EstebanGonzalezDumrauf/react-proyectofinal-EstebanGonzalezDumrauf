@@ -4,6 +4,7 @@ import Insta from "./images/pie/insta.png"
 import Mail from "./images/pie/mail.png"
 import Natura from "./images/pie/natura.png"
 import Logo from "./images/pie/logotipo.jpg"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
@@ -29,17 +30,17 @@ const Footer = () => {
 
                 <div className="col-lg-3 col-md-4 col-sm-12 text-end align-items-center align-self-center">
                     <div>
-                        <a href="https://www.instagram.com/liliana_naturabahia"><img src={Insta} alt="Logo de Instagram"
-                            width="50" height="50" /></a>
+                        <Link to={"https://www.instagram.com/liliana_naturabahia"}><img src={Insta} alt="Logo de Instagram"
+                            width="50" height="50" /></Link>
 
-                        <a href="https://web.whatsapp.com/send?text=&phone=542915370601"><img src={Wup}
-                            alt="Logo de WhatsUp" width="50" height="50" /></a>
+                        <Link to={"https://web.whatsapp.com/send?text=&phone=542915370601"}><img src={Wup}
+                            alt="Logo de WhatsUp" width="50" height="50" /></Link>
 
-                        <a href="mailto:lilianamikula@hotmail.com"><img src={Mail} alt="Logo de Correo Electrónico"
-                            width="50" height="50" /></a>
+                        <Link to={"mailto:lilianamikula@hotmail.com"}><img src={Mail} alt="Logo de Correo Electrónico"
+                            width="50" height="50" /></Link>
 
-                        <a href="http://www.naturacosmeticos.com.ar/consultoria/lilianamikula"><img src={Natura}
-                            alt="Logo de la Pagina de Natura" width="50" height="50" /></a>
+                        <Link to={"http://www.naturacosmeticos.com.ar/consultoria/lilianamikula"}><img src={Natura}
+                            alt="Logo de la Pagina de Natura" width="50" height="50" /></Link>
                     </div>
                 </div>
             </div>

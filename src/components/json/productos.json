@@ -3,6 +3,7 @@
         "id":"AB-5001",
         "descripcion":"Repuesto Shampoo Hidratación Reparadora",
         "marca": "Plant",
+        "categoria": "cuidado",
         "precio":978,
         "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwca05c8a4/NATARG-51874_1.jpg",
         "stock":10
@@ -12,6 +13,7 @@
         "id":"AC-5005",
         "descripcion":"Repuesto hidratante corporal maracuyá",
         "marca": "Ekos",
+        "categoria": "cuidado",
         "precio":3150,
         "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw9b8f5797/NATARG-73179_1.jpg",
         "stock":9
@@ -21,6 +23,7 @@
         "id":"DB-7110",
         "descripcion":"Repuesto Shampoo Liso y Suelto",
         "marca": "Plant",
+        "categoria": "cuidado",
         "precio":1150,
         "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw6791eef8/NATARG-48100_1.jpg",
         "stock":8
@@ -30,6 +33,7 @@
         "id":"CT-2350",
         "descripcion":"Pulpa Hidratante para Manos Ekos Castaña",
         "marca": "Ekos",
+        "categoria": "belleza",
         "precio":2195,
         "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw11c3c069/1200x1200/70983_2.jpg",
         "stock":7
@@ -39,6 +43,7 @@
         "id":"AT-6450",
         "descripcion":"Repuesto Frescor Ishpink",
         "marca": "Una",
+        "categoria": "belleza",
         "precio":5996,
         "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw4285b431/1200x1200/118999_1.jpg",
         "stock":6
@@ -48,6 +53,7 @@
         "id":"CC-1002",
         "descripcion":"Rubor Intense Me Coral",
         "marca": "Una",
+        "categoria": "perfumeria",
         "precio":5180,
         "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw378d4ddb/1200x1200/92595_1.jpg",
         "stock":5

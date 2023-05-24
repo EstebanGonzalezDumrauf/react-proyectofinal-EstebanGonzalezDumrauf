@@ -1,4 +1,5 @@
 import LogoShini from "./images/heading/bannerlogo.jpg"
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -13,17 +14,21 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse show" id="navbarBasic">
-                        <ul className="navbar-nav me-auto mb-xl-0 align-self-center">
+                        <ul className="navbar-nav me-auto mb-xl-0 align-self-center"> 
                             <li className="nav-item">
-                                <a className="nav-link mx-2 fs-5 fw-bold" aria-current="page" href="index.html">Home</a>
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/"}>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mx-2 fs-5 fw-bold" aria-current="page" href="index.html">Productos</a>
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/belleza"}>Belleza</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link mx-2 fs-5 fw-bold" href="index.html" tabIndex="-1" aria-disabled="true">Mi
-                                    Carrito</a>
-                                    {/* carrito.html */}
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/cuidado"}>Cuidado</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/perfumeria"}>Perfumería</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                {/* carrito.html */}
                             </li>
                         </ul>
                     </div>
