@@ -1,61 +1,271 @@
 [
     {
-        "id":"AB-5001",
-        "descripcion":"Repuesto Shampoo Hidratación Reparadora",
-        "marca": "Plant",
+        "id":"CU-5001",
+        "descripcion":"Jabones en barra puro vegetal",
+        "marca": "TodoDIA",
         "categoria": "cuidado",
-        "precio":978,
-        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwca05c8a4/NATARG-51874_1.jpg",
+        "precio":1641,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw6c8694f1/1200x1200/100535_1.jpg",
         "stock":10
     },
 
     {
-        "id":"AC-5005",
-        "descripcion":"Repuesto hidratante corporal maracuyá",
-        "marca": "Ekos",
+        "id":"CU-7110",
+        "descripcion":"Meu Primeiro Humor Crema corporal",
+        "marca": "Humor",
         "categoria": "cuidado",
-        "precio":3150,
-        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw9b8f5797/NATARG-73179_1.jpg",
-        "stock":9
-    },
-
-    {
-        "id":"DB-7110",
-        "descripcion":"Repuesto Shampoo Liso y Suelto",
-        "marca": "Plant",
-        "categoria": "cuidado",
-        "precio":1150,
-        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw6791eef8/NATARG-48100_1.jpg",
+        "precio":858,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwb21b4a7c/1200x1200/109169_1.jpg",
         "stock":8
     }, 
 
     {
-        "id":"CT-2350",
-        "descripcion":"Pulpa Hidratante para Manos Ekos Castaña",
+        "id":"CU-2350",
+        "descripcion":"Pulpa Hidratante para Manos Maracuyá",
         "marca": "Ekos",
-        "categoria": "belleza",
-        "precio":2195,
-        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw11c3c069/1200x1200/70983_2.jpg",
+        "categoria": "cuidado",
+        "precio":1646,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwa793b7e0/NATARG-80967_1.jpg",
         "stock":7
     },
 
     {
-        "id":"AT-6450",
-        "descripcion":"Repuesto Frescor Ishpink",
-        "marca": "Una",
-        "categoria": "belleza",
-        "precio":5996,
-        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw4285b431/1200x1200/118999_1.jpg",
+        "id":"CU-6450",
+        "descripcion":"Desodorante Roll on Masculino Clasico",
+        "marca": "Kaiak",
+        "categoria": "cuidado",
+        "precio":1020,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw5b93072f/NATARG-112081_1.jpg",
         "stock":6
     },
 
     {
-        "id":"CC-1002",
-        "descripcion":"Rubor Intense Me Coral",
-        "marca": "Una",
-        "categoria": "perfumeria",
-        "precio":5180,
-        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw378d4ddb/1200x1200/92595_1.jpg",
+        "id":"CU-6952",
+        "descripcion":"Jabones en Barra Puro Vegetal Exfoliantes",
+        "marca": "Ekos",
+        "categoria": "cuidado",
+        "precio":2745,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw2adb675d/1200x1200/72998_2.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"CU-5005",
+        "descripcion":"Crema ultranutritiva ciruela y flor de vainilla",
+        "marca": "TodoDIA",
+        "categoria": "cuidado",
+        "precio":2363,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw498b7b2f/1200x1200/112107_1.jpg",
+        "stock":8
+    },
+
+    {
+        "id":"CU-4552",
+        "descripcion":"Jabón líquido gel andiroba",
+        "marca": "Ekos",
+        "categoria": "cuidado",
+        "precio":2365,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw02978d10/1200x1200/70406_1.jpg",
+        "stock":2
+    },
+
+    {
+        "id":"CU-7922",
+        "descripcion":"Repuesto Jabón liquido para manos Pitanga",
+        "marca": "Ekos",
+        "categoria": "cuidado",
+        "precio":1790,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwb49b1fbf/NATARG-70390_1.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"CU-8022",
+        "descripcion":"Natura Desodorante Antitranspirante",
+        "marca": "Erva Doce",
+        "categoria": "cuidado",
+        "precio":1020,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw794b1410/NATARG-2179_1.jpg",
         "stock":5
+    },
+
+    {
+        "id":"PE-1100",
+        "descripcion":"Aguas Colonia",
+        "marca": "Águas de Natura",
+        "categoria": "perfumeria",
+        "precio":3311,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw9d6490ad/1200x1200/95810_1_v2.jpg",
+        "stock":7
+    },
+    
+    {
+        "id":"PE-8565",
+        "descripcion":"Kaiak Aventura Masculino",
+        "marca": "Kaiak",
+        "categoria": "perfumeria",
+        "precio":10575,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw5c071ff9/1200x1200/111173_1.jpg",
+        "stock":10
+    },
+
+    {
+        "id":"PE-2320",
+        "descripcion":"Homem Dom",
+        "marca": "Homem",
+        "categoria": "perfumeria",
+        "precio":9258,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw0e711b8f/PRODUTOS/imagem-07-1/17067_1.jpg",
+        "stock":2
+    },
+
+    {
+        "id":"PE-2541",
+        "descripcion":"Urbano Nox",
+        "marca": "Urbano",
+        "categoria": "perfumeria",
+        "precio":8670,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw4d8479f9/1200x1200/115758_1.jpg",
+        "stock":3
+    },
+
+    {
+        "id":"PE-2961",
+        "descripcion":"Luna Atitude",
+        "marca": "Luna",
+        "categoria": "perfumeria",
+        "precio":13400,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwf0a245ff/NATARG-107011_1.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"PE-4965",
+        "descripcion":"Biografía Clásico Femenino",
+        "marca": "Biografía",
+        "categoria": "perfumeria",
+        "precio":9130,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwd42ccf71/1200x1200/74788_1_v2.jpg",
+        "stock":10
+    },
+
+    {
+        "id":"PE-6250",
+        "descripcion":"Kriska Shock Eau de Toilette Femenino",
+        "marca": "Kriska",
+        "categoria": "perfumeria",
+        "precio":8280,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw90cee22c/NATARG-83323_1.jpg",
+        "stock":10
+    },
+
+    {
+        "id":"PE-7189",
+        "descripcion":"Essencial Oud Vainilla femenino",
+        "marca": "Essencial",
+        "categoria": "perfumeria",
+        "precio":17610,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw904d1a84/NATARG-110264_1.jpg",
+        "stock":5
+    },
+
+    {
+        "id":"BE-5001",
+        "descripcion":"Gel Post Barba Paz y Humor",
+        "marca": "Humor",
+        "categoria": "belleza",
+        "precio":710,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dweb590b33/1200x1200/115664_1.jpg",
+        "stock":10
+    },
+
+    {
+        "id":"BE-5005",
+        "descripcion":"Rutina completa piel seca Chronos",
+        "marca": "Chronos",
+        "categoria": "belleza",
+        "precio":15822,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw358c5520/NATARG-108706_1.jpg",
+        "stock":9
+    },
+
+    {
+        "id":"BE-5205",
+        "descripcion":"Antiseñales 45+ Día FPS30",
+        "marca": "Chronos",
+        "categoria": "belleza",
+        "precio":10170,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw142d1353/NATARG-59890_1.jpg",
+        "stock":9
+    },
+
+    {
+        "id":"BE-7110",
+        "descripcion":"Hidratante Facial Piel Normal a Seca",
+        "marca": "Faces",
+        "categoria": "belleza",
+        "precio":2200,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw26d1718f/NATARG-91821_1.jpg",
+        "stock":8
+    }, 
+
+    {
+        "id":"BE-2350",
+        "descripcion":"Bálsamo post barba",
+        "marca": "Essencial",
+        "categoria": "belleza",
+        "precio":1845,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwb1554502/NATARG-113776_1.jpg",
+        "stock":7
+    },
+
+    {
+        "id":"BE-6450",
+        "descripcion":"Bálsamo Post Barba Homem Dom",
+        "marca": "Homem",
+        "categoria": "belleza",
+        "precio":2540,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw65d663e6/1200x1200/108673_1.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"BE-6350",
+        "descripcion":"Pincel PRO Base Líquida Una",
+        "marca": "Una",
+        "categoria": "belleza",
+        "precio":6880,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw08bf68bc/1200x1200/55104_2.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"BE-6650",
+        "descripcion":"Shampoo Matizador Cabello Rubio o Canas",
+        "marca": "Lumina",
+        "categoria": "belleza",
+        "precio":1990,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dwf6e6a40d/NATARG-74053_1.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"BE-9650",
+        "descripcion":"Máscara Capilar Fortalecedora Ekos Patauá",
+        "marca": "Ekos",
+        "categoria": "belleza",
+        "precio":3315,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw8b2aafd6/1200x1200/73190_2.jpg",
+        "stock":6
+    },
+
+    {
+        "id":"PE-7545",
+        "descripcion":"Kaiak Clásico Femenino",
+        "marca": "Kaiak",
+        "categoria": "perfumeria",
+        "precio":10575,
+        "images":"https://production.na01.natura.com/on/demandware.static/-/Sites-natura-ar-storefront-catalog/default/dw854194e4/1200x1200/111176_1.jpg",
+        "stock":10
     }
 ]
