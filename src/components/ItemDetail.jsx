@@ -19,7 +19,7 @@ const ItemDetail = ({producto}) => {
                 <h1>$ {item.precio}</h1>
                 <h4 className="text-secondary mb-3">{item.marca}</h4>
                 <div className="text-right mx-5">
-                <ItemCount inicial={1} stock={item.stock} onAdd={(cantidad) => console.log('Cantidad Agregada', cantidad)} />
+                <ItemCount inicial={1} stock={item.stock}  />
                 </div>
 
                 
