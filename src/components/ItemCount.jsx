@@ -21,10 +21,7 @@ const ItemCount = ({ stock, inicial }) => {
         if (cantidad <= itemStock) {
             console.log('Cantidad Agregada', cantidad);
             setCantidad(1);
-            console.log(itemStock);
-            console.log(cantidad);
             setitemStock(itemStock - cantidad);
-            console.log('Stock Actual', itemStock);
         }
     }
 
@@ -43,9 +40,7 @@ const ItemCount = ({ stock, inicial }) => {
                         <button type="button" className="btn btn-success mx-3" onClick={incrementar}>+</button>
                     </div>
                     <div>
-                        <button className="btn btn-dark my-2" onClick={() => onAdd(cantidad)} >
-                            Agregar Al Carrito
-                        </button>
+                        <button className="btn btn-dark my-2" onClick={() => onAdd(cantidad)}>Agregar Al Carrito</button>
                     </div>
                 </div>
                 <h6 className="text-secondary mx-3 ps-4 my-1">Stock: {itemStock}</h6>
