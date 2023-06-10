@@ -1,10 +1,18 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
+import { CartContext } from "./context/CartContext"; 
 
 const ItemDetail = ({producto}) => {
+    const {addItem} = useContext(CartContext);
     const [item, setItem] = useState({});
 
-    useEffect(() => {
+    //const onAdd = (quantity) => {
+    const onAdd = (quantity) => {
+        console.log("Cantidad" + quantity + item.id);
+        addItem(item, quantity);
+    };
+
+    useEffect(() => { 
         setItem(producto);
     }, [producto]);
 
@@ -19,7 +27,7 @@ const ItemDetail = ({producto}) => {
                 <h1>$ {item.precio}</h1>
                 <h4 className="text-secondary mb-3">{item.marca}</h4>
                 <div className="text-right mx-5">
-                <ItemCount inicial={1} stock={item.stock}  />
+                <ItemCount inicial={1} stock={item.stock} producto={item} onAdd={onAdd} />
                 </div>
 
                 
