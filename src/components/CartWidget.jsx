@@ -10,7 +10,7 @@ const CartWidget = () => {
         (totalItems() > 0) ? 
         <div>
             <Link to={"/cart"} className="btn btn-ligth" width="20" height="20">
-            {/* carrito.html */}
+
                 <button type="button" className="btn btn-ligth position-relative" width="20" height="20">
                     <img src={Carrito} alt="Logo de carrito de compras" width="35" height="35" />
                     <span id="cantidadProdu"
@@ -20,8 +20,7 @@ const CartWidget = () => {
                 </button>
             </Link>
         </div>
-        : ""         
-    )
+        : "" )
 }
 
 export default CartWidget;
