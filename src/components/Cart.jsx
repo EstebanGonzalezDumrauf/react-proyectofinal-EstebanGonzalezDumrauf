@@ -15,25 +15,28 @@ const Cart = () => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <table className="table table-bordered">
-                            {
-                                cart.map(item => (
-                                    <tr>
-                                        <td><img src={item.images} alt={item.descripcion} width={80} /></td>
-                                        <td className="text-start">{item.descripcion}</td>
-                                        <td className="text-start mx-5">Cantidad: {item.cantidad}</td>
-                                        <td>$ {item.cantidad * item.precio}</td>
-                                        <td><button className="btn btn-ligth" onClick={() => {removeItem(item.id)}} title="Eliminar Producto"><img src={Papelera} alt="Eliminar Producto" width={35} /></button></td>
-                                    </tr>
+                        <table className="table">
+                            <tbody>
+                                {
+                                    cart.map(item => (
 
-                                ))
-                            }
+                                        <tr key={item.id} className="align-middle">
+                                            <td><img src={item.images} alt={item.descripcion} width={80} /></td>
+                                            <td className="text-start">{item.descripcion}</td>
+                                            <td className="text-start mx-5">Cantidad: {item.cantidad} x $ {item.precio} c/u</td>
+                                            <td className="text-start">$ {item.cantidad * item.precio}</td>
+                                            <td className="text-end"><button className="btn btn-ligth" onClick={() => { removeItem(item.id) }} title="Eliminar Producto"><img src={Papelera} alt="Eliminar Producto" width={35} /></button></td>
+                                        </tr>
+
+                                    ))
+                                }
+                            </tbody>
                         </table>
                         <div className="row">
-                                <div className="col text-center">
-                                    <h5>Total de la compra: $ {totalMonto()} </h5>
-                                </div>
-                            </div> 
+                            <div className="col text-center">
+                                <h5>Total de la compra: $ {totalMonto()} </h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 {/* <p>Total de prodcutos: {totalItems()} por un monto de {totalMonto()}</p> */}

@@ -1,25 +1,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemList from "./ItemList";
-//import productos from "./json/productos.json"
 import { useParams } from "react-router-dom";
 import { collection, doc, getDoc, getFirestore, getDocs, query, where } from "firebase/firestore";
+import Loading from "./Loading";
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
+    const [loading, setLoading] = useState(true);
     const { id } = useParams();
-
-    // useEffect(() => {
-    //     const promesa = new Promise((resolve) => {
-    //         setTimeout(() => {
-    //             resolve(id ? productos.filter(producto => producto.categoria === id) : productos)
-    //         }, 2000);
-    //     });
-
-    //     promesa.then(data => {
-    //         setItems(data);
-    //     })
-    // }, [id]);
 
     useEffect(() => {
         const db = getFirestore();
@@ -30,6 +19,7 @@ const ItemListContainer = () => {
                 console.log("No hay productos");
             } else {
                 setItems(resultado.docs.map(producto => ({ id: producto.id, ...producto.data() })));
+                setLoading(false);
             }
         });
     }, [id]);
@@ -37,7 +27,7 @@ const ItemListContainer = () => {
     return (
         <div className="container my-5">
             <div className="row my-2">
-                <ItemList items={items} />
+                {loading ? <Loading /> : <ItemList items={items} />}
             </div>
         </div>
     )
