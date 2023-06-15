@@ -3,7 +3,7 @@ import { CartContext } from "./context/CartContext";
 import { collection, getFirestore, addDoc, doc, updateDoc } from "firebase/firestore";
 
 const CheckOut = () => {
-    const { cart, totalMonto } = useContext(CartContext);
+    const { cart, totalMonto, clear } = useContext(CartContext);
 
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
@@ -25,12 +25,7 @@ const CheckOut = () => {
         }
 
         const buyer = { name: nombre, phone: telefono, email: email };
-        const items = cart.map(item => ({ id: item.id, title: item.descripcion, price: item.precio }));
-
-        //probar modifi Stock
-        const stocks = cart.map(item => ({ id: item.id, title: item.nuevostock }));
-
-
+        const items = cart.map(item => ({ id: item.id, title: item.descripcion, price: item.precio, quantity:item.cantidad }));
 
         const fecha = new Date();
         const date = `${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes()}`;
@@ -42,22 +37,27 @@ const CheckOut = () => {
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then(resultado => {
             setOrderID(resultado.id);
+            clear();
         }).catch(
             resultado => {
                 console.log("Error!! NO SE PUDO COMPLETAR LA COMPRA");
             }
         )
         
-        //probar modifi STOCK
+        let stockActual;
         const dbStock = getFirestore();
-        const orderDoc = doc(db, "orders", "4IJ6d9fDYgZ0exZR14sa");
-        updateDoc(orderDoc, {stock: cart.cantidad}).then(resultado => {
-            console.log("Stock Actualizado");
-        }).catch(
-            resultado => {
-                console.log("Error!! NO SE PUDO COMPLETAR LA COMPRA");
-            }
-        )
+        let stocks = cart.map((produ) => {
+            stockActual = produ.stock - produ.cantidad;
+            console.log(produ.id, stockActual);
+            const orderDoc = doc(dbStock, "items", produ.id);
+            updateDoc(orderDoc, {stock: stockActual}).then(resultado => {
+                console.log("Stock Actualizado", stocks);
+            }).catch(
+                resultado => {
+                    console.log("Error!! NO SE PUDO COMPLETAR LA COMPRA");
+                }
+            )
+        });
     }
 
     return (
@@ -83,8 +83,7 @@ const CheckOut = () => {
                 <div className="col-md-7 ">
                     <table className="table mx-2">
                         <tbody>
-                            {
-                                cart.map(item => (
+                            {cart.map(item => (
                                     <tr key={item.id} className="align-middle">
                                         <td><img src={item.images} alt={item.descripcion} width={80} /></td>
                                         <td className="text-start">{item.descripcion}</td>

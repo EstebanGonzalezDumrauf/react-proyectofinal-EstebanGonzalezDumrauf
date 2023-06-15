@@ -8,7 +8,7 @@ const ItemDetail = ({producto}) => {
 
     //const onAdd = (quantity) => {
     const onAdd = (quantity) => {
-        console.log("Cantidad" + quantity + item.id);
+        // console.log("Cantidad" + quantity + item.id);
         addItem(item, quantity);
     };
 

@@ -21,7 +21,7 @@ const ItemCount = ({ stock, inicial, producto, onAdd}) => {
 
     const addToCart = (cantidad) => {
         if (cantidad <= itemStock) {
-            console.log('Cantidad Agregada', cantidad);
+            // console.log('Cantidad Agregada', cantidad);
             setCantidad(1);
             setitemAgregado(true);
             onAdd(cantidad);
@@ -45,15 +45,11 @@ const ItemCount = ({ stock, inicial, producto, onAdd}) => {
                     </div>
                     <div> 
                         {itemAgregado ? <Link to={"/cart"} className="btn btn-dark my-2">Finalizar Compra </Link> : <button className="btn btn-dark my-2" onClick={() => addToCart(cantidad)}>Agregar Al Carrito</button>}
-                                                                                                                                                                        {/* onAdd */}
                     </div>
                 </div>
                 <h6 className="text-secondary mx-3 ps-4 my-1">Stock: {itemStock}</h6>
             </div>
         </div>
-
-
-
     )
 }
 
