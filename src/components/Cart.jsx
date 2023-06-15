@@ -1,9 +1,10 @@
 import Papelera from "./images/heading/residuos.png"
 import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
-    const { cart, removeItem, clear, totalItems, totalMonto } = useContext(CartContext);
+    const { cart, removeItem, totalItems, totalMonto } = useContext(CartContext);
 
     if (totalItems() > 0) {
         return (
@@ -19,15 +20,13 @@ const Cart = () => {
                             <tbody>
                                 {
                                     cart.map(item => (
-
                                         <tr key={item.id} className="align-middle">
                                             <td><img src={item.images} alt={item.descripcion} width={80} /></td>
-                                            <td className="text-start">{item.descripcion}</td>
-                                            <td className="text-start mx-5">Cantidad: {item.cantidad} x $ {item.precio} c/u</td>
-                                            <td className="text-start">$ {item.cantidad * item.precio}</td>
-                                            <td className="text-end"><button className="btn btn-ligth" onClick={() => { removeItem(item.id) }} title="Eliminar Producto"><img src={Papelera} alt="Eliminar Producto" width={35} /></button></td>
+                                            <td className="text-start"><h5>{item.descripcion}</h5></td>
+                                            <td className="text-start mx-5"><h5>Cantidad: {item.cantidad} x $ {item.precio} c/u</h5></td>
+                                            <td className="text-start"><h5>$ {item.cantidad * item.precio}</h5></td>
+                                            <td className="text-end"><button className="btn btn-ligth" onClick={() => { removeItem(item.id) }} title="Eliminar Producto"><img src={Papelera} alt="Eliminar Producto" width={25} /></button></td>
                                         </tr>
-
                                     ))
                                 }
                             </tbody>
@@ -35,11 +34,11 @@ const Cart = () => {
                         <div className="row">
                             <div className="col text-center">
                                 <h5>Total de la compra: $ {totalMonto()} </h5>
+                                <Link to={"/checkout"} className="btn btn-outline-success text-decoration-none text-center my-2"><h5>Hacer Pedido</h5></Link>
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <p>Total de prodcutos: {totalItems()} por un monto de {totalMonto()}</p> */}
             </div>
         )
     } else {
@@ -47,7 +46,7 @@ const Cart = () => {
             <div className="container-fluid my-5">
                 <div className="row">
                     <div className="col text-center">
-                        <div className="alert alert-warning" role="warning">
+                        <div className="alert alert-warning">
                             <h1>Carrito Sin Productos</h1>
                         </div>
                     </div>

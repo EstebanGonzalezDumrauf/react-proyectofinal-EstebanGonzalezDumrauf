@@ -24,6 +24,11 @@ const CartContextProvider = ({children}) => {
         setCart([]);
     };
 
+    const clearYUpdate = () => {
+        window.location.reload(false);
+    }
+
+
     const isInCart = (id) => {
         return cart.some(item => item.id === id);
     };
@@ -37,7 +42,7 @@ const CartContextProvider = ({children}) => {
     }
 
     return (
-        <CartContext.Provider value={{cart, addItem, removeItem, clear, isInCart, totalItems, totalMonto}}>
+        <CartContext.Provider value={{cart, addItem, removeItem, clearYUpdate, clear, isInCart, totalItems, totalMonto}}>
             {children}
         </CartContext.Provider>
     )

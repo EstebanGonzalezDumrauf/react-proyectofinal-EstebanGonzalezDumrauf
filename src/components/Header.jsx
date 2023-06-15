@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { CartContext } from "./context/CartContext";
 
 const Header = () => {
-    const { clear, totalItems } = useContext(CartContext);
+    const { clear, totalItems, clearYUpdate} = useContext(CartContext);
 
     return (
         (totalItems() > 0) ? 
@@ -28,8 +28,8 @@ const Header = () => {
                 </div>
                 <div className="col-md-4 d-flex align-items-center justify-content-end">
                     <CartWidget />                       
-                    <Link to={"/"} className="btn btn-ligth" width="20" height="20">
-                        <button type="button" className="btn btn-ligth position-relative" onClick={() => {clear()}} title="Vaciar Carrito" width="20" height="20">
+                    <Link className="btn btn-ligth" width="20" height="20">
+                        <button type="button" className="btn btn-ligth position-relative" onClick={() => {clearYUpdate()}} title="Vaciar Carrito" width="20" height="20">
                             <img src={Papelera} alt="Logo de carrito de compras" width="22" height="22" />
                         </button>
                     </Link>

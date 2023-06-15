@@ -19,7 +19,6 @@ const ItemCount = ({ stock, inicial, producto, onAdd}) => {
         }
     }
 
-    //const onAdd = (cantidad) => {
     const addToCart = (cantidad) => {
         if (cantidad <= itemStock) {
             console.log('Cantidad Agregada', cantidad);
