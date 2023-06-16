@@ -6,9 +6,7 @@ const ItemDetail = ({producto}) => {
     const {addItem} = useContext(CartContext);
     const [item, setItem] = useState({});
 
-    //const onAdd = (quantity) => {
     const onAdd = (quantity) => {
-        // console.log("Cantidad" + quantity + item.id);
         addItem(item, quantity);
     };
 
@@ -28,9 +26,7 @@ const ItemDetail = ({producto}) => {
                 <h4 className="text-secondary mb-3">{item.marca}</h4>
                 <div className="text-right mx-5">
                 <ItemCount inicial={1} stock={item.stock} producto={item} onAdd={onAdd} />
-                </div>
-
-                
+                </div>                
             </div>
         </div>
     </div>

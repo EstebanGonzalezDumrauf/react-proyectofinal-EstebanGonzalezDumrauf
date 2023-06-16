@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-const ItemCount = ({ stock, inicial, producto, onAdd}) => {
+const ItemCount = ({ stock, inicial, onAdd}) => {
 
     const [cantidad, setCantidad] = useState(inicial);
     const [itemStock, setitemStock] = useState(stock);
@@ -21,7 +21,6 @@ const ItemCount = ({ stock, inicial, producto, onAdd}) => {
 
     const addToCart = (cantidad) => {
         if (cantidad <= itemStock) {
-            // console.log('Cantidad Agregada', cantidad);
             setCantidad(1);
             setitemAgregado(true);
             onAdd(cantidad);
