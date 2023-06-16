@@ -19,13 +19,13 @@ const Navbar = () => {
                                 <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/"}>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/belleza"}>Belleza</NavLink>
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/categoria/belleza"}>Belleza</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/cuidado"}>Cuidado</NavLink>
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/categoria/cuidado"}>Cuidado</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/perfumeria"}>Perfumería</NavLink>
+                                <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/categoria/perfumeria"}>Perfumería</NavLink>
                             </li>
                             <li className="nav-item">
                             </li>
