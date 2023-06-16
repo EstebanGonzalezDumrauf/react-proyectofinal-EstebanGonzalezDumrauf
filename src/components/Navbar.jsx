@@ -28,7 +28,6 @@ const Navbar = () => {
                                 <NavLink className="nav-link mx-2 fs-5 fw-bold" activeclassname="fw-bold" aria-current="page" to={"/category/perfumeria"}>Perfumería</NavLink>
                             </li>
                             <li className="nav-item">
-                                {/* carrito.html */}
                             </li>
                         </ul>
                     </div>

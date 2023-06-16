@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { CartContext } from "./context/CartContext";
 import { collection, getFirestore, addDoc, doc, updateDoc } from "firebase/firestore";
+import { Navigate } from "react-router-dom";
 
 const CheckOut = () => {
     const { cart, totalMonto, clear } = useContext(CartContext);
@@ -25,7 +26,7 @@ const CheckOut = () => {
         }
 
         const buyer = { name: nombre, phone: telefono, email: email };
-        const items = cart.map(item => ({ id: item.id, title: item.descripcion, price: item.precio, quantity:item.cantidad }));
+        const items = cart.map(item => ({ id: item.id, title: item.descripcion, price: item.precio, quantity: item.cantidad }));
 
         const fecha = new Date();
         const date = `${fecha.getFullYear()}-${fecha.getMonth() + 1}-${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes()}`;
@@ -43,18 +44,18 @@ const CheckOut = () => {
                 console.log("Error!! NO SE PUDO COMPLETAR LA COMPRA");
             }
         )
-        
+
         let stockActual;
         const dbStock = getFirestore();
         let stocks = cart.map((produ) => {
             stockActual = produ.stock - produ.cantidad;
             console.log(produ.id, stockActual);
             const orderDoc = doc(dbStock, "items", produ.id);
-            updateDoc(orderDoc, {stock: stockActual}).then(resultado => {
+            updateDoc(orderDoc, { stock: stockActual }).then(resultado => {
                 console.log("Stock Actualizado", stocks);
             }).catch(
                 resultado => {
-                    console.log("Error!! NO SE PUDO COMPLETAR LA COMPRA");
+                    console.log("Error!! NO SE PUDO ACTUALIZAR EL STOCK");
                 }
             )
         });
@@ -84,13 +85,13 @@ const CheckOut = () => {
                     <table className="table mx-2">
                         <tbody>
                             {cart.map(item => (
-                                    <tr key={item.id} className="align-middle">
-                                        <td><img src={item.images} alt={item.descripcion} width={80} /></td>
-                                        <td className="text-start">{item.descripcion}</td>
-                                        <td className="text-start mx-5">Cantidad: {item.cantidad}</td>
-                                        <td className="text-start mx-3">$ {item.cantidad * item.precio}</td>
-                                    </tr>
-                                ))
+                                <tr key={item.id} className="align-middle">
+                                    <td><img src={item.images} alt={item.descripcion} width={80} /></td>
+                                    <td className="text-start">{item.descripcion}</td>
+                                    <td className="text-start mx-5">Cantidad: {item.cantidad}</td>
+                                    <td className="text-start mx-3">$ {item.cantidad * item.precio}</td>
+                                </tr>
+                            ))
                             }
                         </tbody>
                     </table>
@@ -101,17 +102,7 @@ const CheckOut = () => {
                     </div>
                 </div>
             </div>
-            {orderID ? 
-            <div className="container-fluid my-5">
-                <div className="row">
-                    <div className="col text-center">
-                        <div className="alert alert-warning">
-                            <h1>GRACIAS POR TU COMPRA!!</h1>
-                            <h3>Tu orden de compra es {orderID}</h3>
-                        </div>
-                    </div> 
-                </div>
-            </div> : ""}
+            {orderID ? <Navigate to={"/order/" + orderID} /> : ""};
         </div>
     )
 }

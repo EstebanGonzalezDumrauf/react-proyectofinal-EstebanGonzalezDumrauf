@@ -9,6 +9,7 @@ import Error404 from './components/Error404';
 import Cart from './components/Cart';
 import CartContextProvider from './components/context/CartContext';
 import CheckOut from './components/CheckOut';
+import Order from './components/Order';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path={"/category/:id"} element={<ItemListContainer />} />
             <Route path={"/cart"} element={<Cart />} />
             <Route path={"/checkout"} element={<CheckOut />} />
+            <Route path={"/order/:orderId"} element={<Order />} />
             <Route path={"/item/:id"} element={<ItemDetailContainer />} />
             <Route path={"/*"} element={<Error404 />} />
           </Routes>
