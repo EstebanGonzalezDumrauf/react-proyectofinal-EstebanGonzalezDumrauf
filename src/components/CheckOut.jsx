@@ -47,16 +47,16 @@ const CheckOut = () => {
 
         let stockActual;
         const dbStock = getFirestore();
-        let stocks = cart.map((produ) => {
+        let stocks = cart.map(async produ => {
             stockActual = produ.stock - produ.cantidad;
             const orderDoc = doc(dbStock, "items", produ.id);
-            updateDoc(orderDoc, { stock: stockActual }).then(resultado => {
-                console.log("Stock Actualizado", resultado);
-            }).catch(
-                resultado => {
-                    console.log("Error!! NO SE PUDO ACTUALIZAR EL STOCK");
-                }
-            )
+            try {
+                await updateDoc(orderDoc, { stock: stockActual });
+                console.log("Stock Actualizado");
+            }
+            catch (resultado) {
+                console.log("Error!! NO SE PUDO ACTUALIZAR EL STOCK", stocks);
+            }
         });
     }
 

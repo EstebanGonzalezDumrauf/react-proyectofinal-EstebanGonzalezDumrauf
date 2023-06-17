@@ -13,9 +13,9 @@ const ItemListContainer = () => {
     useEffect(() => {
         const db = getFirestore();
         const itemsCollection = collection(db, "items");
-        const q = id ? query(itemsCollection, where("categoria", "==", id)) : itemsCollection;
+        const q = id ? query(itemsCollection, where("categoria", "===", id)) : itemsCollection;
         getDocs(q).then(resultado => {
-            if (resultado.size == 0) {
+            if (resultado.size === 0) {
                 console.log("No hay productos");
             } else {
                 setItems(resultado.docs.map(producto => ({ id: producto.id, ...producto.data() })));
