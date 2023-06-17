@@ -29,7 +29,7 @@ const Header = () => {
                 <div className="col-md-4 d-flex align-items-center justify-content-end">
                     <CartWidget />                       
                     <Link width="20" height="20">
-                        <button type="button" className="btn btn-ligth position-relative" onClick={() => {clearYUpdate()}} title="Vaciar Carrito" width="20" height="20">
+                        <button type="button" className="btn btn-ligth position-relative" onClick={clearYUpdate} title="Vaciar Carrito" width="20" height="20">
                             <img src={Papelera} alt="Logo de carrito de compras" width="22" height="22" />
                         </button>
                     </Link>
