@@ -49,10 +49,9 @@ const CheckOut = () => {
         const dbStock = getFirestore();
         let stocks = cart.map((produ) => {
             stockActual = produ.stock - produ.cantidad;
-            console.log(produ.id, stockActual);
             const orderDoc = doc(dbStock, "items", produ.id);
             updateDoc(orderDoc, { stock: stockActual }).then(resultado => {
-                console.log("Stock Actualizado", stocks);
+                console.log("Stock Actualizado", resultado);
             }).catch(
                 resultado => {
                     console.log("Error!! NO SE PUDO ACTUALIZAR EL STOCK");
@@ -66,19 +65,19 @@ const CheckOut = () => {
             <div className="row">
                 <div className="col-md-4 offset-md-1">
                     <form>
-                        <div className="mb-3">
-                            <label for="nombre" className="form-label">Nombre</label>
-                            <input type="text" className="form-control" onInput={(e) => { setNombre(e.target.value) }} />
+                        <div>
+                            {/* <label for="nombre" className="form-label">Nombre</label> */}
+                            <input type="text" className="form-control my-2" placeholder="Nombre y Apellido" onInput={(e) => { setNombre(e.target.value) }} />
                         </div>
-                        <div className="mb-3">
-                            <label for="email" className="form-label">E-mail</label>
-                            <input type="text" className="form-control" onInput={(e) => { setEmail(e.target.value) }} />
+                        <div>
+                            {/* <label for="email" className="form-label">E-mail</label> */}
+                            <input type="text" className="form-control my-2" placeholder="Email" onInput={(e) => { setEmail(e.target.value) }} />
                         </div>
-                        <div className="mb-3">
-                            <label for="telefono" className="form-label">Teléfono</label>
-                            <input type="text" className="form-control" onInput={(e) => { setTelefono(e.target.value) }} />
+                        <div>
+                            {/* <label for="telefono" className="form-label">Teléfono</label> */}
+                            <input type="text" className="form-control my-2" placeholder="teléfono" onInput={(e) => { setTelefono(e.target.value) }} />
                         </div>
-                        <button type="button" className="btn btn-success" onClick={GenerarOrden}>Generar Pedido</button>
+                        <button type="button" className="btn btn-success my-2" onClick={GenerarOrden}>Generar Pedido</button>
                     </form>
                 </div>
                 <div className="col-md-7 ">
