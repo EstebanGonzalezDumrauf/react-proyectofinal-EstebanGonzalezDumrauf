@@ -25,7 +25,7 @@ const CartContextProvider = ({children}) => {
     };
 
     const clearYUpdate = () => {
-        window.location.reload(false);
+        window.location.reload(true);
     }
 
 
