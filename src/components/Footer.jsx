@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col-lg-4 col-md-3 col-sm-12 text-right align-text-center" >
-                    © 2023, Shining Life. Todos los derechos reservados. Versión 2.0.2
+                    © 2023, Shining Life. Todos los derechos reservados.
                 </div>
 
                 <div className="col-lg-3 col-md-4 col-sm-12 text-end align-items-center align-self-center">
